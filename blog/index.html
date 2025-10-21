@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Du Lịch Bình Thuận | Cẩm Nang, Kinh Nghiệm, Địa Điểm Đẹp | BinhThuanTour.site</title>
+    <meta name="description" content="Blog du lịch Bình Thuận chuyên nghiệp - Chia sẻ kinh nghiệm, cẩm nang du lịch Mũi Né, Phan Thiết, Bàu Trắng, Kê Gà, Cù Lao Câu. Hướng dẫn chi tiết, địa điểm check-in đẹp, ẩm thực địa phương.">
+    <meta name="keywords" content="blog du lịch bình thuận, cẩm nang du lịch bình thuận, kinh nghiệm du lịch mũi né, kinh nghiệm du lịch phan thiết, hướng dẫn du lịch bình thuận, địa điểm đẹp bình thuận, ẩm thực bình thuận, check-in bình thuận, du lịch bình thuận 2025">
+    <link rel="canonical" href="https://binhthuantour.site/blog/">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Bình Thuận Tour">
+    <meta name="geo.region" content="VN-54">
+    <meta name="geo.placename" content="Bình Thuận">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+      /* Ensure blog cards are styled even if main CSS fails */
+      .post-card{background:#fff;border:1px solid #e9f1f0;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.15);margin-bottom:20px;transition:transform .2s ease}
+      .post-card:hover{transform:translateY(-2px)}
+      .post-card img{width:100%;height:200px;object-fit:cover;display:block}
+      .post-body{padding:16px}
+      .post-title{margin:0 0 8px;font-size:18px;font-weight:600}
+      .post-title a{color:#0b5d6b;text-decoration:none}
+      .post-title a:hover{color:#3bd4c6}
+      .post-meta{color:#57737a;font-size:14px;margin-bottom:8px}
+      .post-card p{margin:0;line-height:1.5;font-size:14px}
+    </style>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/images/favicon.svg">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DLX85R197"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-9DLX85R197');
+    </script>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog du lịch Bình Thuận",
+      "alternateName": "BinhThuanTour Blog",
+      "url": "https://binhthuantour.site/blog/",
+      "description": "Blog du lịch Bình Thuận chuyên nghiệp - Chia sẻ kinh nghiệm, cẩm nang du lịch Mũi Né, Phan Thiết, Bàu Trắng, Kê Gà, Cù Lao Câu",
+      "inLanguage": "vi-VN",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bình Thuận Tour",
+        "url": "https://binhthuantour.site/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://binhthuantour.site/assets/images/logo.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://binhthuantour.site/blog/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="../index.html">Tour Bình Thuận</a>
+        <nav class="nav">
+          <a href="../tours.html">Tour</a>
+          <a href="./">Blog</a>
+          <a href="../about.html">Giới thiệu</a>
+          <a class="btn btn-primary" href="../contact.html">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="section-title">Blog du lịch Bình Thuận</h1>
+        <div class="grid cards" id="blog-list" aria-live="polite"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span>Bình Thuận Tour.</p>
+        <nav class="footer-nav">
+          <a href="../about.html">Giới thiệu</a>
+          <a href="../tours.html">Tour</a>
+          <a href="../contact.html">Liên hệ</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      // Fallback blog data if JSON fails to load
+      const fallbackPosts = [
+        {
+          slug: "kinh-nghiem-du-lich-mui-ne-2025",
+          title: "Kinh nghiệm du lịch Mũi Né 2025: Ăn gì, chơi gì, ở đâu?",
+          date: "2025-01-05",
+          readingMinutes: 8,
+          cover: "https://pystravel.vn/_next/image?url=https%3A%2F%2Fbooking.pystravel.vn%2Fuploads%2Fposts%2Falbums%2F17655%2F6ff8788bf078eb8e6f4ca147c39ab98e.jpg&w=1920&q=75",
+          excerpt: "Hướng dẫn chi tiết du lịch Mũi Né 2025: lịch trình 3 ngày 2 đêm, điểm check-in đẹp, quán ăn ngon, khách sạn giá tốt và mẹo tiết kiệm chi phí."
+        },
+        {
+          slug: "checklist-bau-trang-jeep-tour",
+          title: "Checklist Bàu Trắng với xe Jeep: Chụp ảnh đẹp không khó",
+          date: "2025-02-02",
+          readingMinutes: 6,
+          cover: "https://dulichchat.com/wp-content/uploads/2020/06/Tour-xe-jeep-bau-trang-phan-thiet-dulichchat.jpg",
+          excerpt: "Hướng dẫn chi tiết tour Bàu Trắng bằng xe Jeep: thời điểm đẹp nhất, trang phục phù hợp, góc chụp ảnh đẹp và cách đặt tour tiết kiệm chi phí."
+        },
+        {
+          slug: "hai-dang-ke-ga-huong-dan-di-tu-tuc",
+          title: "Hải đăng Kê Gà: Hướng dẫn đi tự túc và đặt cano",
+          date: "2025-03-10",
+          readingMinutes: 7,
+          cover: "https://static.vinwonders.com/production/hai-dang-ke-ga-banner.jpg",
+          excerpt: "Hướng dẫn chi tiết tham quan Hải đăng Kê Gà: cách đi, giờ hoạt động, giá vé cano, lịch trình tối ưu và mẹo chụp ảnh đẹp tại ngọn hải đăng cổ nhất Việt Nam."
+        },
+        {
+          slug: "an-gi-o-phan-thiet",
+          title: "Ăn gì ở Phan Thiết: Top 12 quán địa phương ngon nhất",
+          date: "2025-03-22",
+          readingMinutes: 9,
+          cover: "https://langchaixua.com/wp-content/uploads/2019/11/an-gi-o-phan-thiet-26.jpg",
+          excerpt: "Danh sách 12 quán ăn ngon nhất Phan Thiết: từ gỏi cá mai, bánh xèo tôm mực đến bánh canh chả cá, với địa chỉ, giá cả và mẹo đặt bàn."
+        },
+        {
+          slug: "kinh-nghiem-lan-ngam-cu-lao-cau",
+          title: "Kinh nghiệm lặn ngắm san hô Cù Lao Câu: Hướng dẫn chi tiết",
+          date: "2025-04-05",
+          readingMinutes: 8,
+          cover: "https://cdn3.ivivu.com/2020/07/trai-nghiem-lan-bien-ngam-san-ho-o-dao-Cu-Lao-Cham-ivivu-03.jpg",
+          excerpt: "Hướng dẫn lặn ngắm san hô tại Cù Lao Câu: thời điểm tốt nhất, dụng cụ cần mang, kỹ thuật lặn an toàn và cách bảo vệ môi trường biển."
+        }
+      ];
+
+      // Append additional review posts to fallback
+      fallbackPosts.push(
+        {
+          slug: "review-binh-thuan-tu-a-den-z",
+          title: "Review Bình Thuận từ A-Z: Thiên nhiên, khí hậu và trải nghiệm",
+          date: "2025-04-18",
+          readingMinutes: 12,
+          cover: "https://www.vietnamairlines.com/~/media/SEO-images/2025%20SEO/Traffic%20TV/du-lich-binh-thuan/du-lich-binh-thuan.jpg",
+          excerpt: "Bình Thuận có gì đẹp? Biển xanh nắng ấm, đồi cát như sa mạc, ẩm thực tươi ngon và con người hiếu khách – lý do khiến bạn phải đến ít nhất một lần."
+        },
+        {
+          slug: "review-mui-yen-binh-minh",
+          title: "Review Mũi Yến: Bình minh đẹp nhất Bình Thuận",
+          date: "2025-04-22",
+          readingMinutes: 10,
+          cover: "https://lalago.vn/wp-content/uploads/2025/05/mui-yen-2-1024x576.jpg",
+          excerpt: "Mũi Yến nổi tiếng với bình minh rực rỡ, vách đá hùng vĩ và không khí trong lành – điểm săn ảnh yêu thích của giới trẻ."
+        },
+        {
+          slug: "review-hon-rom-bai-da-bay-mau",
+          title: "Review Hòn Rơm: Biển xanh và bãi đá bảy màu",
+          date: "2025-04-26",
+          readingMinutes: 9,
+          cover: "https://phanthietvn.com/wp-content/uploads/2019/09/mui-ne-o-dau-768x508.jpg",
+          excerpt: "Hòn Rơm chinh phục du khách bằng bãi biển dài, nước trong và bãi đá bảy màu độc đáo – lý tưởng cho cặp đôi và gia đình."
+        },
+        {
+          slug: "review-bau-trang-sa-mac-trang-viet-nam",
+          title: "Review Bàu Trắng: 'Sa mạc trắng' đẹp nhất Việt Nam",
+          date: "2025-05-01",
+          readingMinutes: 11,
+          cover: "https://langchaixua.com/wp-content/uploads/2021/03/11-9.jpg",
+          excerpt: "Bàu Trắng có gì? Đồi cát mênh mông, hồ nước xanh ngọc, xe Jeep băng cát và hoàng hôn 'đỉnh của chóp'."
+        },
+        {
+          slug: "review-bien-ke-ga",
+          title: "Review biển Kê Gà: Vẻ đẹp hoang sơ cạnh hải đăng cổ",
+          date: "2025-05-06",
+          readingMinutes: 10,
+          cover: "https://media.loveitopcdn.com/41316/thumb/kcfinder/upload//images/50639b7103b51.jpg",
+          excerpt: "Biển Kê Gà gây ấn tượng bởi bãi cát mịn, nước xanh và hải đăng cổ nhất Việt Nam – thích hợp cắm trại, ngắm sao và chụp ảnh cưới."
+        },
+        {
+          slug: "binh-thuan-khu-du-lich-quoc-gia",
+          title: "Bình Thuận: Từ vùng đất khô cằn đến khu du lịch quốc gia",
+          date: "2025-05-15",
+          readingMinutes: 15,
+          cover: "https://i1-dulich.vnecdn.net/2024/05/24/Mui-Ne-5293-1716545117.jpg?w=0&h=0&q=100&dpr=1&fit=crop&s=YZlLpmDVlIp5j4nVBpu3Mg",
+          excerpt: "Bình Thuận đã được công nhận là khu du lịch quốc gia với những tiềm năng du lịch đặc biệt. Hành trình từ vùng đất khô cằn đến điểm đến du lịch hàng đầu Việt Nam."
+        },
+        {
+          slug: "binh-thuan-van-hoa-cham-doc-dao",
+          title: "Bình Thuận: Khám phá văn hóa Chăm độc đáo giữa lòng du lịch hiện đại",
+          date: "2025-05-20",
+          readingMinutes: 12,
+          cover: "https://diadanhbinhthuan.com/wp-content/uploads/2021/06/nen-van-hoa-cham-pa-binh-thuan-4.jpg",
+          excerpt: "Bình Thuận không chỉ có biển xanh, cát trắng mà còn là nơi lưu giữ văn hóa Chăm độc đáo. Khám phá những di tích, lễ hội và nghề thủ công truyền thống của người Chăm."
+        },
+        {
+          slug: "binh-thuan-du-lich-xanh-ben-vung",
+          title: "Bình Thuận: Hành trình phát triển du lịch xanh bền vững",
+          date: "2025-05-25",
+          readingMinutes: 14,
+          cover: "https://media.baobinhphuoc.com.vn/upload/news/3_2023/image001_09033127032023.jpg",
+          excerpt: "Bình Thuận đang hướng tới phát triển du lịch xanh bền vững với những sáng kiến bảo vệ môi trường, sử dụng năng lượng tái tạo và phát triển du lịch có trách nhiệm."
+        }
+        // {
+        //   slug: "binh-thuan-du-lich-cao-cap",
+        //   title: "Bình Thuận: Hướng tới du lịch cao cấp và quốc tế",
+        //   date: "2025-05-30",
+        //   readingMinutes: 13,
+        //   cover: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1600&auto=format&fit=crop",
+        //   excerpt: "Bình Thuận đang chuyển mình từ du lịch bình dân sang du lịch cao cấp với những resort 5 sao, sân golf quốc tế và các dịch vụ đẳng cấp thế giới."
+        // },
+        // {
+        //   slug: "binh-thuan-tuong-lai-du-lich",
+        //   title: "Bình Thuận: Tầm nhìn tương lai - Từ du lịch địa phương đến điểm đến quốc tế",
+        //   date: "2025-06-05",
+        //   readingMinutes: 16,
+        //   cover: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1600&auto=format&fit=crop",
+        //   excerpt: "Bình Thuận đang hướng tới tương lai với tầm nhìn trở thành điểm đến du lịch quốc tế. Những dự án lớn, chính sách mới và đầu tư hạ tầng đang thay đổi diện mạo du lịch tỉnh."
+        // }
+      );
+
+      async function renderList(){
+        const list=document.getElementById('blog-list');
+        try {
+          const res=await fetch('./posts.json');
+          const posts=await res.json();
+          renderPosts(posts);
+        } catch(e) {
+          console.log('Using fallback data');
+          renderPosts(fallbackPosts);
+        }
+      }
+
+      function renderPosts(posts) {
+        const list=document.getElementById('blog-list');
+        posts.forEach(p=>{
+          const el=document.createElement('article');
+          el.className='post-card';
+          el.innerHTML=`<img src="${p.cover}" alt="${p.title}">\n<div class='post-body'>\n<h3 class='post-title'><a href='./post.html?slug=${encodeURIComponent(p.slug)}'>${p.title}</a></h3>\n<div class='post-meta'>${new Date(p.date).toLocaleDateString('vi-VN')} • ${p.readingMinutes} phút đọc</div>\n<p>${p.excerpt}</p>\n</div>`;
+          list.appendChild(el);
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded',()=>{
+        const y=document.getElementById('year');
+        if(y) y.textContent=new Date().getFullYear();
+        renderList();
+      });
+    </script>
+  </body>
+  </html>
+
+

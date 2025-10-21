@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+Disallow: /assets/css/
+Sitemap: https://binhthuantour.site/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thư viện ảnh | Tour Bình Thuận</title>
+    <meta name="description" content="Thư viện ảnh Bình Thuận: Mũi Né, Bàu Trắng, Kê Gà, Cù Lao Câu.">
+    <link rel="canonical" href="/gallery.html">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.svg">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DLX85R197"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-9DLX85R197');
+    </script>
+    <style>
+      .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+      .gallery figure{margin:0;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.12);background:#fff}
+      .gallery img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .25s ease}
+      .gallery figure:hover img{transform:scale(1.04)}
+      .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.8);display:none;align-items:center;justify-content:center}
+      .lightbox img{max-width:min(92vw,1200px);max-height:80vh;border-radius:12px}
+      .lightbox.show{display:flex}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="./index.html">Tour Bình Thuận</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav">
+          <a href="./tours.html">Tour</a>
+          <a href="./blog/index.html">Blog</a>
+          <a href="./gallery.html">Ảnh</a>
+          <a class="btn btn-primary" href="./contact.html">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="section-title">Thư viện ảnh</h1>
+        <div id="gallery" class="gallery"></div>
+      </div>
+      <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh lớn"><img alt=""></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Tour Bình Thuận.</p>
+        <nav class="footer-nav">
+          <a href="./about.html">Giới thiệu</a>
+          <a href="./tours.html">Tour</a>
+          <a href="./contact.html">Liên hệ</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./assets/js/config.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded',()=>{
+        const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
+        const g=document.getElementById('gallery');
+        (window.SITE_CONFIG?.gallery||[]).forEach(item=>{
+          const f=document.createElement('figure');
+          f.innerHTML=`<img loading="lazy" src="${item.src}" alt="${item.alt}">`;
+          f.addEventListener('click',()=>openLightbox(item));
+          g.appendChild(f);
+        });
+        const lb=document.getElementById('lightbox');
+        function openLightbox(item){lb.classList.add('show');lb.querySelector('img').src=item.src;lb.querySelector('img').alt=item.alt;}
+        lb.addEventListener('click',()=>lb.classList.remove('show'));
+        window.addEventListener('keydown',(e)=>{if(e.key==='Escape')lb.classList.remove('show')});
+      });
+    </script>
+  </body>
+  </html>
+
+

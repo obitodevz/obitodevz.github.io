@@ -1,0 +1,77 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="oceanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3bd4c6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0b5d6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#08414a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="sandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0b5d6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3bd4c6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="28" fill="url(#oceanGradient)" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Ocean waves -->
+  <path d="M8 25 Q15 20, 22 25 T36 25 T50 25" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M10 30 Q17 25, 24 30 T38 30 T52 30" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M12 35 Q19 30, 26 35 T40 35 T54 35" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Sun -->
+  <circle cx="45" cy="18" r="8" fill="url(#sunGradient)"/>
+  <circle cx="45" cy="18" r="6" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Sun rays -->
+  <g stroke="url(#sunGradient)" stroke-width="2" opacity="0.8">
+    <line x1="45" y1="6" x2="45" y2="10"/>
+    <line x1="45" y1="26" x2="45" y2="30"/>
+    <line x1="33" y1="18" x2="37" y2="18"/>
+    <line x1="53" y1="18" x2="57" y2="18"/>
+    <line x1="37" y1="8" x2="40" y2="11"/>
+    <line x1="50" y1="8" x2="53" y2="11"/>
+    <line x1="37" y1="28" x2="40" y2="25"/>
+    <line x1="50" y1="28" x2="53" y2="25"/>
+  </g>
+  
+  <!-- Sand dunes -->
+  <path d="M5 45 Q15 40, 25 45 T45 45 T55 45" fill="url(#sandGradient)" opacity="0.9"/>
+  <path d="M8 50 Q18 45, 28 50 T48 50 T58 50" fill="url(#sandGradient)" opacity="0.7"/>
+  
+  <!-- Palm tree -->
+  <line x1="20" y1="45" x2="20" y2="35" stroke="#8b5a2b" stroke-width="2"/>
+  <path d="M20 35 Q15 30, 10 35 Q15 32, 20 35 Q25 32, 30 35 Q25 30, 20 35" fill="#22c55e"/>
+  <path d="M20 35 Q18 30, 16 35 Q18 32, 20 35 Q22 32, 24 35 Q22 30, 20 35" fill="#16a34a"/>
+  
+  <!-- Main text -->
+  <text x="70" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="url(#textGradient)">
+    Tour Bình Thuận
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="70" y="42" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#6b7280">
+    Du lịch Mũi Né • Phan Thiết • Bàu Trắng
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="180" cy="15" r="3" fill="#3bd4c6" opacity="0.6"/>
+  <circle cx="185" cy="25" r="2" fill="#0b5d6b" opacity="0.8"/>
+  <circle cx="175" cy="35" r="2.5" fill="#3bd4c6" opacity="0.7"/>
+  
+  <!-- Bottom accent line -->
+  <rect x="70" y="48" width="120" height="2" fill="url(#oceanGradient)" rx="1"/>
+</svg>
