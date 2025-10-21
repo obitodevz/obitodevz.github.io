@@ -10,28 +10,28 @@ async function loadBlogTeaser(){
       title: "Kinh nghiệm du lịch Mũi Né 2025: Ăn gì, chơi gì, ở đâu?",
       date: "2025-01-05",
       readingMinutes: 8,
-      cover: "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1600&auto=format&fit=crop"
+      cover: "https://pystravel.vn/_next/image?url=https%3A%2F%2Fbooking.pystravel.vn%2Fuploads%2Fposts%2Falbums%2F17655%2F6ff8788bf078eb8e6f4ca147c39ab98e.jpg&w=1920&q=75"
     },
     {
       slug: "checklist-bau-trang-jeep-tour",
       title: "Checklist Bàu Trắng với xe Jeep: Chụp ảnh đẹp không khó",
       date: "2025-02-02",
       readingMinutes: 6,
-      cover: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop"
+      cover: "https://dulichchat.com/wp-content/uploads/2020/06/Tour-xe-jeep-bau-trang-phan-thiet-dulichchat.jpg"
     },
     {
       slug: "review-binh-thuan-tu-a-den-z",
       title: "Review Bình Thuận từ A-Z: Thiên nhiên, khí hậu và trải nghiệm",
       date: "2025-04-18",
       readingMinutes: 12,
-      cover: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1600&auto=format&fit=crop"
+      cover: "https://www.vietnamairlines.com/~/media/SEO-images/2025%20SEO/Traffic%20TV/du-lich-binh-thuan/du-lich-binh-thuan.jpg"
     },
     {
       slug: "review-mui-yen-binh-minh",
       title: "Review Mũi Yến: Bình minh đẹp nhất Bình Thuận",
       date: "2025-04-22",
       readingMinutes: 10,
-      cover: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1600&auto=format&fit=crop"
+      cover: "https://lalago.vn/wp-content/uploads/2025/05/mui-yen-2-1024x576.jpg"
     }
   ];
 
@@ -69,5 +69,6 @@ async function loadBlogTeaser(){
 }
 
 window.addEventListener('DOMContentLoaded',loadBlogTeaser);
+
 
 
